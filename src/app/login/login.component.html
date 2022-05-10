@@ -1,0 +1,17 @@
+<div style="text-align: center">
+
+  <h2>Formulaire de connexion</h2>
+  <form [formGroup]="LoginForm"  (ngSubmit)="onSubmit">
+    <mat-form-field>
+      <mat-label>Pseudo</mat-label>
+      <input type="text" matInput formControlName="pseudo">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Mot de passe</mat-label>
+      <input type="password"  formControlName="mdp" matInput>
+    </mat-form-field>
+    <br>
+    <button mat-button color="primary">Connexion</button>
+  </form>
+</div>
